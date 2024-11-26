@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>My To-Do List</h1>
+    <p>Organize your tasks efficiently</p>
+  </div>
+
+  <div class="task-container">
+    <div class="task-input">
+      <input type="text" id="task-name" placeholder="Task Description">
+      <input type="date" id="task-date">
+      <input type="time" id="task-time">
+      <select id="task-priority">
+        <option value="normal">Normal</option>
+        <option value="urgent">Urgent</option>
+        <option value="not-urgent">Not Urgent</option>
+      </select>
+      <button id="add-task">Add Task</button>
+    </div>
+    <div class="filter-container">
+      <label for="task-filter">Filter:</label>
+      <select id="task-filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+        <option value="overdue">Overdue</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <input type="text" id="task-search" placeholder="Search tasks">
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+
+  <div class="footer">
+    <p>Contact us at: <span id="email">farrel fahrezhy@gmail.com</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
